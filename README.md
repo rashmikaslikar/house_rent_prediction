@@ -15,7 +15,7 @@ Task is divided into two main parts, focusing on machine learning model developm
 2.	Predicting Rent with Structural and Text Data: Create a second machine learning model that predicts the total rent using both structural and text data (“description” and “facilities”). Using modern generative AI techniques for processing text data is encouraged.
 ## Overview of Solution
 ## Task 1
-![image info](images/task2.png)
+![image info](images/task1.png)
 
 ## Task 2
 ![image info](images/task2.png)
