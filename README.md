@@ -1,18 +1,17 @@
-# Anomaly Detection for IT Monitoring with the AI Dashboard
+# House Rental Price Prediction using Machine Learning
 
-This is the official code repository of the project 'AI-assissted IT-Monitoring'. This repository contains utilities for:
-- Preprocessing, loading  and normalizing the comNET dataset (MSSQL and Oracle servers)
-- Training and Testing pipelines
-- Scripts for data visualization
-- Large scale inference of the model using TorchServe
+This is the official code repository of the project 'House Rent Prediction'. This repository contains utilities for:
+- EDA of the [real estate data](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany) from Immoscout24
+- Preprocessing and loading the dataset
+- Training, Evaluation and Testing pipelines
 
-Parts of our code should be credited to the following:
+## Aim
+Task is divided into two main parts, focusing on machine learning model development for rent prediction:
 
-- [MTAD-GAT for the model architecture](https://github.com/ML4ITS/mtad-gat-pytorch/tree/main)
-- [GDN for the evaluation methods](https://github.com/d-ailin/GDN)
+1.	Predicting Rent with Structural Data: Develop a machine learning model to predict the total rent using only the structural data. Exclude the “description” and “facilities” text fields for this model.
 
-## Background and Aims
-The aim is to train an AI model that detects complex anomalies which can not be spotted by CheckMK and therefore helps the Porsche IT team to avoid faulty hosts and downtime 
+2.	Predicting Rent with Structural and Text Data: Create a second machine learning model that predicts the total rent using both structural and text data (“description” and “facilities”). Using modern generative AI techniques for processing text data is encouraged.
+ 
 
 ![image info](images/why_anomaly.png)
 
