@@ -5,37 +5,25 @@ This is the official code repository of the project 'House Rent Prediction'. Thi
 - Preprocessing and loading the dataset
 - Training, Evaluation and Testing pipelines
 
-## Aim
+## Data
+The [data](https://www.kaggle.com/datasets/corrieaar/apartment-rental-offers-in-germany) was scraped from Immoscout24, the biggest real estate platform in Germany. Immoscout24 has listings for both rental properties and homes for sale, however, the data only contains offers for rental properties.
+## Task
 Task is divided into two main parts, focusing on machine learning model development for rent prediction:
 
 1.	Predicting Rent with Structural Data: Develop a machine learning model to predict the total rent using only the structural data. Exclude the “description” and “facilities” text fields for this model.
 
 2.	Predicting Rent with Structural and Text Data: Create a second machine learning model that predicts the total rent using both structural and text data (“description” and “facilities”). Using modern generative AI techniques for processing text data is encouraged.
- 
+## Overview of Solution
+## Task 1
+![image info](images/task2.png)
 
-![image info](images/why_anomaly.png)
+## Task 2
+![image info](images/task2.png)
 
-Following reserach papers can be referred to:
-- [USAD : UnSupervised Anomaly Detection on Multivariate Time
-Series](https://dl.acm.org/doi/10.1145/3394486.3403392)
-- [Robust Anomaly Detection for Multivariate Time Series
-through Stochastic Recurrent Neural Network](https://dl.acm.org/doi/10.1145/3292500.3330672)
-- [Neural Contextual Anomaly Detection for Time Series ](https://arxiv.org/pdf/2107.07702.pdf)
--  [Graph Neural Network-Based Anomaly Detection in Multivariate Time Series (AAAI'21)](https://arxiv.org/abs/2106.06947)
-- [Multivariate Time-series Anomaly Detection via Graph Attention Network](https://arxiv.org/abs/2009.02040)
-- [Towards a Rigorous Evaluation of Time-series Anomaly Detection](https://arxiv.org/abs/2109.05257)
-
-## Our model
-The MTAD_GAT model is a combination of forecasting based model and reconstruction based model while using a 1-D CNN for local feature engineering and a GRU for capturing sequential patterns in time series data
-
+## The model architecture
+For the baseline a very simple feed forward network has been chosen. In further experiments the complexity of the model architecture can be increased.
 
 ![image info](images/model.png)
-
-Refer to [MTAD_GAT](https://arxiv.org/abs/2009.02040) for detailed explanation of the model's main components
-
-Previous models used: 
-- [NCAD](https://arxiv.org/pdf/2107.07702.pdf)
-- [GDN](https://arxiv.org/abs/2106.06947)
 
 # HowTo: Model Development
 This section describes the steps to train a model, evauluate the model, deploy and perform inference using TorchServe
