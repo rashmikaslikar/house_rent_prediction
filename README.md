@@ -17,13 +17,14 @@ Task is divided into two main parts, focusing on machine learning model developm
 ## Task 1
 ![image info](images/task1.png)
 
+### Model architecture for Task 1
+![image info](images/model_task1.png)
+
 ## Task 2
 ![image info](images/task2.png)
 
-## The model architecture
-For the baseline a very simple feed forward network has been chosen. In further experiments the complexity of the model architecture can be increased.
-
-![image info](images/model.png)
+### Model architecture for Task 2
+![image info](images/model_task2.png)
 
 # HowTo: Model Development
 This section describes the steps to train and evauluate the model
