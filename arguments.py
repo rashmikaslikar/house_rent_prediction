@@ -36,14 +36,13 @@ class ArgumentsBase(object):
                              help='random seed',)
         self.ap.add_argument('-experiment',type = str, default='Prediction',
                              help='experiment directory')
-        self.ap.add_argument('-model-name', type = str, default='mlp_task1',
+        self.ap.add_argument('-model-name', type = str, default='mlp_task2_2',
                              help='model name', )
         self.ap.add_argument('-config-file-path', type=str, default='config.yaml',
                              help='path to the dataset to be used for evaluation')
 
     def _init_model(self): 
-        self.ap.add_argument('-model-load', type=str, default=None,
-                             help='path of the model which is to be loaded')
+        self.ap.add_argument('-model-load', type=str, default=None)
     #'C:\\Users\\rashm\\Zoi\\experiments\\Prediction\\mlp\\checkpoints\\epoch_1'
     def _init_validation(self):
         self.ap.add_argument('-validation-dataset-name', type=str, default='validation_dataset',
@@ -57,7 +56,7 @@ class ArgumentsBase(object):
     def _init_training(self):
         self.ap.add_argument('-training-num-epochs', type=int, default=10,
                              help='Number of epochs to run the training for')
-        self.ap.add_argument('-lr',type=float, default=0.00001,
+        self.ap.add_argument('-lr',type=float, default=0.001,
                              help='learning rate')
         self.ap.add_argument('-training-dataset-name', type=str, default='training_dataset',
                              help='Name of the training loader')

@@ -2,7 +2,7 @@
 from torch.utils.data import DataLoader
 
 # Local imports
-from dataloader.basedataset import Dataset_Prediction
+from data.basedataset import Dataset_Prediction
 
 VALID_TRAINING_DATASETS = {
                            'training_dataset': Dataset_Prediction

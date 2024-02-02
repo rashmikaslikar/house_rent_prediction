@@ -62,7 +62,7 @@ def process_cat_data(df):
     df_Telekom=df_Telekom.astype(bool)
     df_cat.drop('telekomTvOffer',axis=1,inplace=True)
 
-    "Metric petsAllowed"
+    "Metric petsAllowed convert to boolean"
     criteria=['yes','negotiable']
     df_cat['petsAllowed'] = df_cat['petsAllowed'].apply(lambda x: 'yes_or_negotiable' if x in criteria else x)
     df_cat['petsAllowed'].fillna('no',inplace=True)

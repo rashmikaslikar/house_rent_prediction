@@ -11,7 +11,7 @@ import file_io.get_path as getpath
 from data.preprocess import *
 
 
-task2=False
+task2=True
 class Dataset_Prediction(object):
     def __init__(self,mode,dataset_path,config_file_path,statistics,log_path):
         """
@@ -22,8 +22,8 @@ class Dataset_Prediction(object):
         """
         path_getter = getpath.GetPath()
         dataset_folder = path_getter.get_data_path()
-        data_df=pd.read_csv(os.path.join(dataset_folder,dataset_path))[0:500]
-        config_file_path=os.path.join(Path.cwd(),'dataloader',config_file_path)
+        data_df=pd.read_csv(os.path.join(dataset_folder,dataset_path))[0:20000]
+        config_file_path=os.path.join(Path.cwd(),'data',config_file_path)
         print(f'Raw data shape: {data_df.shape}')
         with open(config_file_path, "r") as config:
             config = yaml.safe_load(config)

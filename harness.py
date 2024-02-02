@@ -6,7 +6,7 @@ import pickle
 from util.env import pretty_device_name
 from util.time import *
 from util.checkpoint_io import *
-from dataloader.loaders import ValidationLoader
+from data.loaders import ValidationLoader
 from model.model import MLP,Prediction_Model
 import torch.nn.functional as F
 from pathlib import Path

@@ -132,7 +132,7 @@ class Trainer(Harness):
             val_end = time.time()
             logger.info(f"Evaluation time: {(val_end-val_start)/60:.3f} minutes")
             
-            val_loss_list.append(val_loss)
+            val_loss_list.append(val_loss.item())
             if self.early_stopping: 
                 if val_loss > min_score:
                     state_train = {'epoch': epoch+1} 
@@ -156,7 +156,7 @@ class Trainer(Harness):
                 f.write("%s\n" % item)
         
         #if self.validate:
-        with open(os.path.join(self.log_path, 'auc.txt'), "w") as f:
+        with open(os.path.join(self.log_path, 'val_loss.txt'), "w") as f:
             for item in val_loss_list:
                 f.write("%s\n" % item)
             

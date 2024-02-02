@@ -10,7 +10,7 @@ import sys
 # local imports
 from harness import Harness
 from arguments import TestArguments
-from dataloader.loaders import TestLoader
+from data.loaders import TestLoader
 
 # We need to setup root logger before importing any fairseq libraries.
 logging.basicConfig(
