@@ -26,7 +26,7 @@ For the baseline a very simple feed forward network has been chosen. In further 
 ![image info](images/model.png)
 
 # HowTo: Model Development
-This section describes the steps to train a model, evauluate the model, deploy and perform inference using TorchServe
+This section describes the steps to train and evauluate the model
 
 ## Installation
 
