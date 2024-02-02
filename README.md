@@ -83,6 +83,3 @@ python test.py -test-dataset-path immo_test.csv -model-load <path to the checkpo
 ## Authors and acknowledgment
 - [Rashmi Kaslikar](https://www.linkedin.com/in/rashmi-kaslikar-0072117b/)
 
-## License
-- work based on repository with an MIT-license, everything else is still being discussed.
-
